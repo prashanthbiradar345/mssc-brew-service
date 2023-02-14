@@ -12,7 +12,7 @@ import java.util.UUID;
 public class BeerController {
 
     @GetMapping("/{beerId}")
-    public ResponseEntity<BeerDTO> getBeerById(@PathVariable("beerId") UUID beerId)
+    public ResponseEntity<BeerDTO> getBeerById(@PathVariable("beerId") UUID beerId) 
     {
         //toDo impl
         return new ResponseEntity<>(BeerDTO.builder().build(), HttpStatus.OK);
